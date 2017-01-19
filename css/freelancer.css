@@ -68,6 +68,7 @@ hr.star-primary:after {
 }
 header {
   padding-top: 100px;
+  max-width: 100%;
   position: relative;
   width: 100%;
   min-height: 400px;
@@ -110,6 +111,12 @@ header .intro-text .skills {
   }
   header .intro-text .skills {
     font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pad {
+    visibility: hidden;
+    display: none;
   }
 }
 .navbar-custom {
