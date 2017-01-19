@@ -67,8 +67,18 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 header {
+  padding-top: 100px;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../img/cropedme.png");
+  opacity: 0.9;
   text-align: center;
-  background: #4aacc9;
   color: white;
 }
 header .container {
