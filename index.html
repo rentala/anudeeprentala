@@ -74,22 +74,16 @@
 
     <!-- Header -->
     <header class="col-sm-12 col-md-12">
-        <div style="padding-top: 70px">
+        <div style="padding-top: 70px; margin-top: 170px;">
             <!--<img class="img-responsive" src="img/cropedme.png" width="100%" alt="">-->
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <div class="row">
+        <div class="row" style="padding-top:100px">
             <div class="col-md-8">
                 <div class="intro-text">
                     <span class="name">Anudeep Rentala</span>
                     <hr class="star-light">
-                    <span class="skills">Software Developer - Problem Solver</span>
+                    <span class="element skills"></span>
                 </div>
             </div>
 
@@ -131,6 +125,23 @@
                         <!--<img src="img/portfolio/cabin.png" class="img-responsive" alt="">-->
                     </a>
                 </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="https://github.com/shafi-dayatar/sturdy-happiness" class="portfolio-link" >
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i>
+                                    <p>Project Gossamer - A highly available fault tolerant distributed file storage system.</p>
+                                    <p>Java | Google ProtoBuf | Netty | Linux</p>
+                                </i>
+
+                            </div>
+                        </div>
+
+                        <img src="img/portfolio/gossamer.png" style="padding-top: 90px;" class="img-responsive" alt="">
+                        <!--<img src="img/portfolio/cabin.png" class="img-responsive" alt="">-->
+                    </a>
+                </div>
+
                 <div class="col-sm-4 portfolio-item">
                     <a href="https://github.com/rentala/lab2" class="portfolio-link" >
                         <div class="caption">
@@ -210,8 +221,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>I am a graduate student pursuing Masters of Science in Software Engineering at San Jose State University, California.
-                        I love automation, machine learning and building fault tolerant distributed systems.</p>
+                    <p class="text-center"> Hello ! I am a graduate student specializing in Distributed Systems and Cloud Technologies at San Jose State University, California.
+                        My other interests include machine learning and web development.</p>
                 </div>
                 <div class="col-lg-4">
                     <p></p>
@@ -555,8 +566,20 @@
 
 </body>
 <script src="js/jquery.shuffle-images.js"></script>
+<script src="js/typed.js"></script>
 <script>
     $(function () {
+        $(".element").typed({
+            strings: ["Software Developer","Problem Solver", "Engineer"],
+            typeSpeed: 40,
+            startDelay:800,
+            backDelay: 1000,
+            loop: true,
+            loopCount: false,
+            showCursor: true,
+            cursorChar: "|"
+        });
+
         $(".shuffle-me").shuffleImages({
             trigger: "imageHover",     // Choose which type of trigger you want here. Available options are "imageMouseMove", "imageHover", "documentMouseMove", and "documentScroll". "imageMouseMove" will trigger when your mouse over the image and move your cursor. "imageHover" will trigger when you mouse over without moving your cursor. "documentMouseMove" will trigger when cursor is being moved anywhere on the page. "documentScroll" will trigger when you scroll the page. The default value is "imageMouseMove"
             triggerTarget: false,          // For "imageMouseMove", and "imageHover" only, you can set which element to trigger the image shuffle when mouse over. For example, if you want a container ".main" to trigger an image shuffle instead of the image itself, put $(".main") for this option. Default value is false.
